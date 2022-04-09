@@ -11,6 +11,40 @@
     <link rel="stylesheet" href="build/css/app.css">
 </head>
 <body>
+    <header class="header">
+        <div class="header__barra contenedor">
+            <div class="header__logo">
+                <img src="build/img/logo.svg" alt="imagen logo">
+            </div>
+            <nav class="navegacion">
+                <a class="navegacion__link" href="#">Nosotros</a>
+                <a class="navegacion__link" href="#">Propiedades</a>
+                <a class="navegacion__link" href="#">Blog</a>
+                <a class="navegacion__link" href="#">Testimoniales</a>
+                <a class="navegacion__link" href="#">Contacto</a>
+            </nav>
+        </div>
+        <div class="contenedor">
+            <div class="header__contenido">
+                <h1 class="header__heading">Encuentra tu casa de lugo al mejor precio</h1>
+                <p class="header__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos repudiandae natus nemo ex. Velit repudiandae quod impedit ut consectetur assumenda dicta non sequi inventore corrupti animi, officia voluptatem maxime ea.</p>
+                <picture>
+                <source 
+                 srcset="build/img/imagenHeader.avif" 
+                 type="image/avif">
+                <source 
+                 srcset="build/img/imagenHeader.webp" 
+                 type="image/webp">
+                <source 
+                 srcset="build/img/imagenHeader.jpg" 
+                 type="image/jpeg">
+                <img class="header__imagen" loading="lazy" decoding="async" alt="imagen header" src="build/img/imagenHeader.jpg" lazyalt="imagen" width="" height="">
+                </picture>
+            </div>
+        </div>
+
+    </header>
+    
 
 </body>
 </html>
