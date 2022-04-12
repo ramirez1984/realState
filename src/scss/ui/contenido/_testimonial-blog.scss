@@ -1,0 +1,106 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.testimoniales-blog {
+    margin-top: 5rem;
+
+    @include m.tablet { 
+        @include m.grid(3, 4rem);
+    }
+    &__blog {
+        @include m.tablet {
+            grid-column: 2 / 4;
+        }
+    }
+    &__heading {
+        @include m.heading(true);
+        &::after {
+            width: 25%;
+        }
+        
+    }
+}
+.testimonial {
+    text-align: center;
+
+    &__imagen {
+        width: 20rem;
+        margin: 0 auto;
+    }
+    &__contenido {
+        background-color: v.$blanco;
+        margin-top: -10rem;
+        padding: 10rem 2rem 2rem 2rem;
+    }
+    &__nombre {
+        font-size: 2.4rem;
+        font-weight: 700;
+    }
+    &__texto {
+        &::before {
+            content: '';
+            background-image: url(../img/quote.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            display: inline-block;
+            width: 4rem;
+            height: 4rem;
+            margin-right: 1rem;
+           
+        }
+    }
+}
+
+.entrada {
+    background-color: v.$blanco;
+    margin-bottom: 2rem;
+
+    @include m.tablet { 
+        @include m.grid(5, 2rem);
+        align-items: center;
+     }
+
+    &__imagen-contenedor {
+        @include m.tablet { 
+            grid-column: 1 / 3;
+            
+         }
+         
+    }
+    &__imagen {
+        height: 27rem;
+        width: 100%;
+        object-fit: cover;
+    }
+    &__contenido {
+        padding: 2rem;
+        padding-bottom: 3rem;
+        @include m.tablet { 
+            grid-column: 3 / 6;
+            padding: 0rem 2rem 2rem 0rem;
+         }
+    }
+    &__meta {
+        font-size: 1.4rem;
+    }
+    
+    &__enlace {
+        @include m.boton(v.$primario, v.$blanco);  
+        display: block; 
+       
+       
+        @include m.tablet { 
+            display: inline;
+            
+         }            
+    }
+
+    &__texto {
+        text-align: justify;
+        margin-bottom: 3rem;
+    }
+}
+
+
+
+

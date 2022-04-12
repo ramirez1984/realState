@@ -131,28 +131,126 @@
             </div>
         </div>
     </section>
-    <div class="testimoniales-blog">
+    <div class="testimoniales-blog contenedor">
         <section class="testimoniales-blog__testimonioniales">
             <h2 class="testimoniales-blog__heading">
                 Que dicen <span>Nuestros Clientes</span></h2>
+            <div class="testimonial">
                 <picture>
-                <source
+                     <source
                      srcset="build/img/testimonial.avif" 
                      type="image/avif">
-                <source
+                     <source
                      srcset="build/img/testimonial.webp" 
                      type="image/webp">
-                <source
+                    <source
                      srcset="build/img/testimonial.jpg" 
                      type="image/jpeg">
-                <img class="testimonial__imagen" loading="lazy" decoding="async" src="build/img/testimonial.jpg" lazyalt="imagen" width="" height="" alt="imagen testimonial">
+                    <img class="testimonial__imagen" loading="lazy" decoding="async" src="build/img/testimonial.jpg" lazyalt="imagen" width="" height="" alt="imagen testimonial">
                 </picture>
+                <div class="testimonial__contenido">
+                    <p class="testimonial__nombre">Familia Hernández</p>
+                    <p class="testimonial__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam eos rerum illo expedita harum repudiandae dolor, maxime quia consequatur neque, debitis quidem. Non vitae modi dolore accusamus ut a quaerat?</p>
+                </div>
+            </div>
         </section>
+
         <section class="testimoniales-blog__blog">
             <h2 class="testimoniales-blog__heading">
                 Últimas entradas <span>de nuestro Blog</span></h2>
+                <div class="entrada">
+                    <div class="entrada__imagen-contenedor">
+                        <picture>
+                            <source
+                             srcset="build/img/blog_1.avif" 
+                             type="image/avif">
+                            <source
+                             srcset="build/img/blog_1.webp" 
+                             type="image/webp">
+                            <source
+                             srcset="build/img/blog_1.jpg" 
+                             type="image/jpg">
+                            <img class="entrada__imagen" loading="lazy" decoding="async" src="build/img/blog_1.jpg" lazyalt="imagen" width="" height="" alt="imagen blog">
+                        </picture>
+                    </div>
+                    <div class="entrada__contenido">
+                        <h3 class="entrada__nombre">Titulo aquí</h3>
+                        <p class="entrada__meta">Publicado por Edgar Ramírez el 12 de abril de 2022 - 10 Comentarios</p>
+                        <p class="entrada__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis vel blanditiis ut. </p>
+                        <a class="entrada__enlace" href="#">Leer Artículo</a>
+                    </div>
+                </div> <!--Cierra entrada-->
+                <div class="entrada">
+                    <div class="entrada__imagen-contenedor">
+                        <picture>
+                            <source
+                             srcset="build/img/blog_2.avif" 
+                             type="image/avif">
+                            <source
+                             srcset="build/img/blog_2.webp" 
+                             type="image/webp">
+                            <source
+                             srcset="build/img/blog_2.jpg" 
+                             type="image/jpg">
+                            <img class="entrada__imagen" loading="lazy" decoding="async" src="build/img/blog_2.jpg" lazyalt="imagen" width="" height="" alt="imagen blog">
+                        </picture>
+                    </div>
+                    <div class="entrada__contenido">
+                        <h3 class="entrada__nombre">Titulo aquí</h3>
+                        <p class="entrada__meta">Publicado por Edgar Ramírez el 12 de abril de 2022 - 10 Comentarios</p>
+                        <p class="entrada__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis vel blanditiis ut. </p>
+                        <a class="entrada__enlace" href="#">Leer Artículo</a>
+                    </div>
+                </div> <!--Cierra entrada-->
+                <div class="entrada">
+                    <div class="entrada__imagen-contenedor">
+                        <picture>
+                            <source
+                             srcset="build/img/blog_3.avif" 
+                             type="image/avif">
+                            <source
+                             srcset="build/img/blog_3.webp" 
+                             type="image/webp">
+                            <source
+                             srcset="build/img/blog_3.jpg" 
+                             type="image/jpg">
+                             <img class="entrada__imagen" loading="lazy" decoding="async" src="build/img/blog_3.jpg" lazyalt="imagen" width="" height="" alt="imagen blog">
+                        </picture>
+                    </div>
+                    <div class="entrada__contenido">
+                        <h3 class="entrada__nombre">Titulo aquí</h3>
+                        <p class="entrada__meta">Publicado por Edgar Ramírez el 12 de abril de 2022 - 10 Comentarios</p>
+                        <p class="entrada__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis vel blanditiis ut. </p>
+                        <a class="entrada__enlace" href="#">Leer Artículo</a>
+                    </div>
+                </div> <!--Cierra entrada-->
         </section>
     </div>
+    <footer class="footer">
+        <div class="footer__grid contenedor">
+            <div class="footer__box">
+                <h3 class="footer__heading">Navegación</h3>
+                <nav class="footer__navegacion">
+                    <a class="footer__link" href="#">Nosotros</a>
+                    <a class="footer__link" href="#">Propiedades</a>
+                    <a class="footer__link" href="#">Blog</a>
+                    <a class="footer__link" href="#">Testimoniales</a>
+                    <a class="footer__link" href="#">Contacto</a>
+                </nav>
+            </div>
+            <div class="footer__box">
+                <h3 class="footer__heading">Nosotros</h3>
+                <p class="footer__texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id ipsum esse quaerat earum deleniti maiores odio aliquam inventore vel ex fugiat, eveniet voluptatibus ratione velit tenetur nihil tempora? Omnis, ipsam?</p>
+            </div>
+            <div class="footer__box">
+                <img src="build/img/logo.svg" alt="logo empresa">
+            </div>
+
+        </div>
+        <p class="footer__copyright">Todos los derechos reservados real state</p>
+        
+    </footer>
+
 
 </body>
 </html>
