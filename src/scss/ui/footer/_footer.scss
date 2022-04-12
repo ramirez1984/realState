@@ -17,7 +17,9 @@
 
     &__grid {
         @include m.tablet { 
-            @include m.grid(3, 2rem)
+            @include m.grid(3, 2rem);
+            align-items: center;
+            
          }
       
     }
@@ -51,7 +53,8 @@
     img {
         margin-top: 5rem;
         @include m.tablet { 
-            margin-top: 0rem
+            margin-top: 0rem;
+            margin-left: 3rem;
          }
                 
     }
